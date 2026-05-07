@@ -1,3 +1,3 @@
-# Symbiosika Robotic
+# Physical AI
 
-This repo contains research and knowlegde around robotics that is relevant for Symbiosika.
+This repo contains research and knowlegde around robotics .
