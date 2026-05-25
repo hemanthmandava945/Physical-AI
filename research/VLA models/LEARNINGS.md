@@ -50,7 +50,7 @@ The entire scene — robot, objects, lighting, physics — is built programmatic
 | **Fine-tuning steps needed** | 10,000 | 100,000 |
 | **Action head** | Flow-matching diffusion (4 denoising steps) | Flow-matching action expert (chunks of 50 actions) |
 | **Action horizon** | 16 steps (~0.27s) — reactive | 50 steps (~0.83s) — slower to re-plan |
-| **Visual encoding** | 640×480 native, full token budget | 64 visual tokens per frame (heavy compression, no tiling) |
+| **Visual encoding** | 224 * 224 native, full token budget | 64 visual tokens per frame (heavy compression, no tiling) |
 | **Task completion** | **Successful** | **Did not complete reliably** |
 
 > **Note:** Both models use flow matching for the action head — the gap is **not** architectural. The decisive differences are (a) the size and domain of robot pretraining and (b) the visual token budget, not "diffusion vs autoregressive."
